@@ -38,35 +38,13 @@ Dataset Size    backtracking (ms)   dfsPermute (ms)     factorialPermute (ms)   
 
 ## Analysis and Explanation
 
-### Backtracking
-The backtracking algorithm generates permutations by fixing one element and recursively permuting the remaining elements. This results in a high number of recursive calls, leading to significant time consumption as the dataset size increases.
-
-- **Pros**: Simple to implement and understand.
-- **Cons**: Inefficient for larger datasets due to its exponential time complexity.
-
-### Depth-First Search (DFS)
-The DFS algorithm uses a boolean array to track used elements and constructs permutations by exploring each possibility deeply before backtracking. This reduces some redundant calculations but still faces exponential growth in execution time.
-
-- **Pros**: Efficient for smaller datasets, avoids redundant calculations.
-- **Cons**: Still suffers from exponential time complexity for larger datasets.
-
-### Factorial
-The factorial algorithm generates permutations by swapping elements and recursively generating permutations of the remaining elements. This approach is more efficient than backtracking and DFS due to fewer recursive calls and direct swaps.
-
-- **Pros**: Directly generates permutations using swaps, efficient for moderate dataset sizes.
-- **Cons**: Still has exponential time complexity, but performs better than backtracking and DFS for larger datasets.
-
-### Heap's Algorithm
-Heap's algorithm generates permutations by systematically swapping elements to produce all possible permutations. It is designed to minimize the number of swaps and recursive calls, making it more efficient for larger datasets.
-
-- **Pros**: Efficient and systematic, performs well for larger datasets.
-- **Cons**: Complexity increases with dataset size, but more manageable compared to other algorithms.
-
-### Lexicographic Order
-The lexicographic order algorithm generates permutations by sorting the elements and then using the `next_permutation` function to generate the next permutation in lexicographic order.
-
-- **Pros**: Simple and efficient for generating permutations in lexicographic order.
-- **Cons**: Still has exponential time complexity, but performs well for moderate dataset sizes.
+| Algorithm            | Pros                                                                 | Cons                                                                 |
+|----------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Backtracking**     | Simple to implement and understand                                   | Inefficient for larger datasets due to its exponential time complexity|
+| **Depth-First Search (DFS)** | Efficient for smaller datasets, avoids redundant calculations | Still suffers from exponential time complexity for larger datasets   |
+| **Factorial**        | Directly generates permutations using swaps, efficient for moderate dataset sizes | Still has exponential time complexity, but performs better than backtracking and DFS for larger datasets |
+| **Heap's Algorithm** | Efficient and systematic, performs well for larger datasets          | Complexity increases with dataset size, but more manageable compared to other algorithms |
+| **Lexicographic Order** | Simple and efficient for generating permutations in lexicographic order | Still has exponential time complexity, but performs well for moderate dataset sizes |
 
 ## Lessons Learned
 
