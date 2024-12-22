@@ -78,6 +78,14 @@ The lexicographic order algorithm generates permutations by sorting the elements
 
 All the algorithms listed in this README have a theoretical time complexity of O(n!). This means that the execution time of these algorithms increases factorially as the size of the dataset increases. However, despite having the same theoretical time complexity, the practical performance of these algorithms can vary due to their implementation details and the number of recursive calls or swaps they perform.
 
+## Personal Note
+
+If I were to choose a permutation algorithm for production use, I would select the lexicographic order algorithm because:
+- No recursion, making it easier to debug and understand.
+- Fast and optimized.
+- Clean and maintainable code.
+- Flexible for solving various problems, such as finding the next permutation in lexicographic order.
+
 ## How to Run
 
 1. Clone the repository.
